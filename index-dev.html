@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8"/>
+    <title>RequireJS Crash Course | Development Mode</title>
+
+    <style>
+      .app {
+        display: block;
+        background-color: black;
+        width: 800px;
+        height: 600px;
+        text-decoration: none;
+      }
+      .app:focus {
+        background-color: #cc0044;
+      }
+      .square {
+        position: relative;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        background-color: white;
+        transition: all cubic-bezier(0.382, 0, 0.618, 1) 0.103s;
+      }
+      .square:after {
+        content: "←↓↑→";
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <a id="js-app" class="app" href="#"></a>
+    <script data-main="src/config-dev" src="src/lib/require.js"></script>
+  </body>
+
+</html>
