@@ -1,8 +1,8 @@
-define([
-  'models/square',
-  'views/square'
-], function(SquareModel, SquareView) {
+define(function(require) {
   'use strict';
+
+  var SquareModel = require('models/square');
+  var SquareView = require('views/square');
 
   var squareModel = new SquareModel();
 

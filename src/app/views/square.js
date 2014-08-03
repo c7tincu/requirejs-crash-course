@@ -1,9 +1,9 @@
-define([
-  'jquery',
-  'underscore',
-  'backbone'
-], function($, _, Backbone) {
+define(function(require) {
   'use strict';
+
+  var $ = require('jquery');
+  var _ = require('underscore');
+  var Backbone = require('backbone');
 
   return Backbone.View.extend({
 
