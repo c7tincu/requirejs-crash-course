@@ -21,6 +21,8 @@ module.exports = function(grunt) {
             backbone: LIB + '/backbone'
           },
 
+          exclude: [ 'jquery' ],
+
           name: 'main',
           out: 'dist/app.min.js'
 
