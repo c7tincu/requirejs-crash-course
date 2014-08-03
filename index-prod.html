@@ -33,7 +33,19 @@
 
   <body>
     <a id="js-app" class="app" href="#"></a>
-    <script data-main="config-prod" src="src/lib/require.js"></script>
+    <script src="dist/require-2.1.14.min.js"></script>
+    <script>
+      requirejs.config({
+        paths: {
+          main: 'dist/app.min',
+          jquery: [
+            'https://code.jquery.com/jquery-2.1.1.min',
+            'dist/jquery-2.1.1.min'
+          ]
+        },
+        deps: [ 'main' ]
+      });
+    </script>
   </body>
 
 </html>
